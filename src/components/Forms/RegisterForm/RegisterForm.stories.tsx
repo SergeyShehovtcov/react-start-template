@@ -10,4 +10,4 @@ const meta: Meta<typeof RegisterForm> = {
 
 export default meta;
 
-export const Форма_регистрации = {};
+export const Форма_регистрации_использовал_react_hook_form = {};
