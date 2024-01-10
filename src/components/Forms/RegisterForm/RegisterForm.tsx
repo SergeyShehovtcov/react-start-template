@@ -29,16 +29,19 @@ function formatPhoneNumber(value: string) {
   )}`;
 }
 
+/**
+ * Компонент RegisterForm. Это форма <b>"Регистрации"</b> на сайте. Пока вы не проходили отправку данных на сервер, поэтому в
+ * формах должна быть только валидация и вывод данных в консоль с одновременной очисткой формы.
+ * Форма должна быть выполнена в сторибук и прямо там должна быть возможность изменять данные в форме,
+ * также должна работать валидация формы для пустых и некорректных данных. Некорректным может быть ввод <i>email/пароля</i> в форме
+ *  <b>"Регистрации"</b>
+ */
 export const RegisterForm: FC = (): ReactElement => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    clearErrors,
     reset,
-    setValue,
-    watch,
-    control,
   } = useForm<RegisterForm>({
     defaultValues: {
       name: '',
